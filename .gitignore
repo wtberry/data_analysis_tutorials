@@ -1,3 +1,5 @@
 .DS_Store
 .ipynb_checkpoints
 Icon^M
+toc_generator.py
+toc_content.txt
