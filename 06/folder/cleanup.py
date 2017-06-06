@@ -1,6 +1,6 @@
 import os
 
-files_for_deletion = ['output.txt', 'results.txt', 'buffer.txt']
+files_for_deletion = ['numbers.txt', 'output.txt', 'results.txt', 'buffer.txt']
 
 for file in files_for_deletion:
     try:
