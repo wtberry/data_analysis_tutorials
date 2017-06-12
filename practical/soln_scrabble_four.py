@@ -24,7 +24,6 @@ lowest = ['', 113809]
 second_lowest = ['', 113809]
 third_lowest = ['', 113809]
 
-
 for letter, count in letters.items():
     if count > highest[1]:
         third_highest = second_highest
@@ -44,19 +43,15 @@ for letter, count in letters.items():
         second_lowest = [letter, count]
 
 
-
-
-
-print(highest, second_highest, third_highest, sep='\n')
-print()
-print(third_lowest, second_lowest, lowest, sep='\n')
-print()
+print('Letters with the highest counts:', highest, second_highest, third_highest, sep='\n')
+print('-' * 60)
+print('Letters with the lowest counts:', third_lowest, second_lowest, lowest, sep='\n')
+print('-' * 60)
 pprint.pprint(letters)
 
 digraphs = []
 for term in terms:
     for start in range(len(term) - 1):
-
         digraph = term[start:start+2]
         if len(digraph) == 2:
             if digraph[0] == digraph[1]:
@@ -73,5 +68,6 @@ for dg, count in digraph_count.items():
         highest_double_count = count
         highest_double = dg
 
-print(highest_double)
+print('-' * 60)
+print('The double with the highest count is:', highest_double)
 pprint.pprint(digraph_count)
