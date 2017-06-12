@@ -1,4 +1,4 @@
-So... how do you solve these types of problems:
+So... how do you solve these types of problems?:
 
 * don't solve the problem >> solve a smaller problem
       * too much data is hard to test for correctness
