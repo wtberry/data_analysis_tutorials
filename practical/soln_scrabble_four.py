@@ -3,19 +3,24 @@
 # 1. which three letters appear most/least frequently
 # 1. which which letter occurs most frequently as a double (i.e. 'ee', 'oo', etc)
 
+# Will use pprint to help make the display a little cleaner later
 import pprint
 
 fin = open('113809of.fic').readlines()
 
+# Removing the newline character so that they do not get counted and throw off
+#     the count of characters
 terms = []
 for line in fin:
     terms.append(line.strip())
 
+# Counting each of the letters
 letters = {}
 for term in terms:
     for letter in term:
         letters[letter] = letters.get(letter, 0) + 1
 
+# temp variables to hold the current highest/lowest letter counts AND letters
 highest = ['', 0]
 second_highest = ['', 0]
 third_highest = ['', 0]
@@ -23,6 +28,9 @@ third_highest = ['', 0]
 lowest = ['', 113809]
 second_lowest = ['', 113809]
 third_lowest = ['', 113809]
+
+
+# Mechanism to track the letter(s) with the highest and lowest three counts
 
 for letter, count in letters.items():
     if count > highest[1]:
