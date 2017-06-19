@@ -1,7 +1,7 @@
 import os
 
 files_for_deletion = ['misc.json', 'misc_neat.json', 'prices.json',
-                      'x_stocks.json']
+                      'x_stocks.json', 'output.xml']
 
 for file in files_for_deletion:
     try:
