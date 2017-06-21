@@ -1,5 +1,6 @@
 import os
-files = ['first.db', 'test2.db', 'data.db', 'customers.db']
+
+files = ['first.db', 'my_first_sql.db', 'my_second_sql.db', 'data.db', 'customers.db']
 
 for file in files:
     try:
