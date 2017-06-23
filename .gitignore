@@ -3,3 +3,5 @@
 Icon\r\r
 toc_generator.py
 toc_content.txt
+!behind_the_scenes/toc_generator.py
+!behind_the_scenes/toc_content.txt
